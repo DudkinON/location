@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps</title>
+</head>
+<body>
+<h2>Input city and country</h2>
+<form action="{{ url_for('maps') }}" method="post">
+    <input type="text" name="city" placeholder="city">
+    <input type="text" name="country" placeholder="country">
+    <input type="submit" value="get data">
+</form>
+{% if location %}
+    <h4>Result</h4>
+    <h5>City: {{ city }}</h5>
+    <h5>Country: {{ country }}</h5>
+    <p>Latitude: {{ location['lat'] }}</p>
+    <p>Longitude: {{ location['lng'] }}</p>
+{% endif %}
+</body>
+</html>
