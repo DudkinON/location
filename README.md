@@ -13,7 +13,7 @@ Quiz: Delving Into APIs: Google Maps API
 Put the following code in the terminal
 
 ```
-git clone 
+git clone https://github.com/DudkinON/location
 ```
 
 ## Usage 
